@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🪪 Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0px;
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(#FFEC1A, #1C61AE, #FB2020);
+        }
+        .box {
+            display:flex;
+            justify-content: center;
+        }
+
+        .perfil-usuario {
+            margin: 80px;
+            background-color: white;
+            background-position:100%;
+            border-radius: 15px;
+            border: 1px solid;
+            width: 400px;
+            height: 600px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .superior {
+            height: 220px;
+            background-image: url(./fondo.jpeg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .foto {
+            margin:150px 125px 0px 125px;
+            width:150px;
+            height:150px;
+            border-radius:100px;
+        }
+
+        .nombre {
+            font-size: x-large;
+            margin:1px 20px 1px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .inferior {
+            font-size: small;
+            margin-top: 75px;
+        }
+
+        .descripcion-usuario {
+            font-size: small;
+            margin-inline: 20px;
+        }
+        .informacion {
+            margin:0;
+            font-size: medium;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            width: 84px;
+            height: 40px;
+            border-radius: 50px;
+            border-color: rgb(63, 103, 236);;
+            background: none;
+            color: rgb(63, 103, 236);
+        }
+
+        .contacto {
+            display: flex;
+            align-items: flex-end;
+            font-size: x-small;
+            margin-top: 20px;
+        }
+        
+        .telefono, .Ciudad, .Twitter {
+            margin-inline: 10px; 
+        }
+        
+        .enlace  {
+            text-decoration: none;
+            color: rgb(63, 103, 236);
+        }
+    </style>
+</head>
+<body>
+    <div class = "box">
+        <div class = "perfil-usuario">
+            <section class ="superior">
+                <img class = "foto" src="./fotoo.jpg" alt="foto">
+            </section>
+            <div class = "inferior">
+                <div class="descripcion-usuario">
+                    <h1 class = "nombre">Kevin Osorio</h1>
+                    <p class = "informacion">22 años, Soltero </p>
+                    <p>Soldado fibroso. Reservista activo de la Fuerza Aerea Colombiana, quien demostro tener las capacidades y actitudes requeridas para la prestacion del servicio militar y quien se destaco en sus funciones como un soldado proactivo, merecedor de conducta "EXCELENTE".</p>
+                </div>
+            </div>    
+            <div>
+                <button class = "button">seguir</button>
+            </div>
+            <div class = "contacto">
+                <div class = "telefono">
+                    <i class="fa-solid fa-phone"></i>
+                    Telefono
+                    3166336072
+                </div>
+                <div class = "Ciudad">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <span>Soacha Cundinamarca Cra 6c #42-10 Sur San Nicolas</span>
+                </div>
+                <div class = "Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>Twitter</span>
+                <a href="/" class = "enlace">@kvn_osorio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
